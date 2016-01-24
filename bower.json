@@ -1,0 +1,18 @@
+{
+  "name": "hello-intern",
+  "description": "sandbox for testing ArcGIS JS API with Intern",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist/",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "dojo": "v1.10.4/esri-3.14.0"
+  },
+  "dependencies": {
+    "arcgis-js-api": "~3.15.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "hello-intern",
+  "version": "1.0.0",
+  "private": true,
+  "description": "exploration of Intern for testing ArcGIS applications",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "bower install"
+  },
+  "repository": {
+    "url": "https://github.com/jccartwright/hello-intern.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-intern": "0.0.4",
+    "gulp-watch": "^4.3.5",
+    "intern": "^3.0.6"
+  }
+}
