@@ -37,10 +37,12 @@ define({
 	// can be used here.
 	// If you want to use a different loader than the default loader, see
 	// <https://theintern.github.io/intern/#option-useLoader> for instruction
+
         loaders: {
-        //'host-node': 'dojo/dojo',
-        //'host-browser': 'node_modules/dojo/dojo.js'
+            'host-node': 'bower_components/dojo/dojo',
+            'host-browser': 'node_modules/dojo/dojo.js'
         },
+
 	loaderOptions: {
 		// Packages that should be registered with the loader in each testing environment
 		packages: [ 
@@ -50,39 +52,39 @@ define({
             },
             {
                 name: 'dojo',
-                location: 'dist/dojo'
+                location: 'bower_components/dojo'
             },
             {
                 name: 'dijit',
-                location: 'dist/dijit'
+                location: 'bower_components/dijit'
             },
             {
                 name: 'dojox',
-                location: 'dist/dojox'
+                location: 'bower_components/dojox'
             },
             {
                 name: 'dgrid',
-                location: 'dist/dgrid'
+                location: 'bower_components/dgrid'
             },
             {
                 name: 'dstore',
-                location: 'dist/dstore'
+                location: 'bower_components/dstore'
             },
             {
                 name: 'dmodel',
-                location: 'dist/dmodel'
+                location: 'bower_components/dmodel'
             },
             {
                 name: 'xstyle',
-                location: 'dist/xstyle'
+                location: 'bower_components/xstyle'
             },
             {
                 name: 'put-selector',
-                location: 'dist/put-selector'
+                location: 'bower_components/put-selector'
             },
             {
                 name: 'esri',
-                location: 'dist/arcgis-js-api'
+                location: 'bower_components/esri'
             }
 		 ]
 	},
