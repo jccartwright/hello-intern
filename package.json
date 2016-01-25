@@ -11,6 +11,7 @@
     "url": "https://github.com/jccartwright/hello-intern.git"
   },
   "devDependencies": {
+    "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",
     "gulp-intern": "0.0.4",
     "gulp-watch": "^4.3.5",
