@@ -1,7 +1,6 @@
 // Learn more about configuring this file at <https://theintern.github.io/intern/#configuration>.
 // These default settings work OK for most people. The options that *must* be changed below are the
 // packages, suites, excludeInstrumentation, and (if you want functional tests) functionalSuites
-console.log(process.cwd())
 define({
 	// Default desired capabilities for all environments. Individual capabilities can be overridden by any of the
 	// specified browser environments in the `environments` array below as well. See
@@ -40,7 +39,7 @@ define({
 
         loaders: {
             'host-node': 'bower_components/dojo/dojo',
-            'host-browser': 'node_modules/dojo/dojo.js'
+            'host-browser': 'bower_components/dojo/dojo.js'
         },
 
 	loaderOptions: {
@@ -84,7 +83,7 @@ define({
             },
             {
                 name: 'esri',
-                location: 'bower_components/esri'
+                location: 'bower_components/arcgis-js-api'
             }
 		 ]
 	},
