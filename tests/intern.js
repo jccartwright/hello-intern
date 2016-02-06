@@ -90,8 +90,8 @@ define({
 
 	// Non-functional test suite(s) to run in each browser
 	suites: [
-	'tests/unit/hello'
-	//'tests/unit/extent'
+	'tests/unit/hello',
+	'tests/unit/extent'
 	 /* 'myPackage/tests/foo', 'myPackage/tests/bar' */ ],
 
 	// Functional test suite(s) to execute against each browser once non-functional tests are completed
