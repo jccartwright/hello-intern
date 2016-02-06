@@ -1,7 +1,7 @@
 # hello-intern
 exploration of Intern for testing ArcGIS applications
 
-Setup
+Setup:
 * npm install
 * run tests via browser, e.g. http://localhost/~jcc/hello-intern/node_modules/intern/client.html?config=tests/intern
 
