@@ -36,12 +36,12 @@ define({
 	// can be used here.
 	// If you want to use a different loader than the default loader, see
 	// <https://theintern.github.io/intern/#option-useLoader> for instruction
-
+/*
         loaders: {
             'host-node': 'bower_components/dojo/dojo',
             'host-browser': 'bower_components/dojo/dojo.js'
         },
-
+*/
 	loaderOptions: {
 		// Packages that should be registered with the loader in each testing environment
 		packages: [ 
