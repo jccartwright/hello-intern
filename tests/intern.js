@@ -17,12 +17,14 @@ define({
 	// OnDemand. Options that will be permutated are browserName, version, platform, and platformVersion; any other
 	// capabilities options specified for an environment will be copied as-is
 	environments: [
-		{ browserName: 'internet explorer', version: '11', platform: 'WIN8' },
-		{ browserName: 'internet explorer', version: '10', platform: 'WIN8' },
-		{ browserName: 'internet explorer', version: '9', platform: 'WINDOWS' },
-		{ browserName: 'firefox', version: '37', platform: [ 'WINDOWS', 'MAC' ] },
-		{ browserName: 'chrome', version: '39', platform: [ 'WINDOWS', 'MAC' ] },
-		{ browserName: 'safari', version: '8', platform: 'MAC' }
+		{ browserName: 'phantomjs' }
+		//{ browserName: 'chrome' }
+		//{ browserName: 'internet explorer', version: '11', platform: 'WIN8' },
+		//{ browserName: 'internet explorer', version: '10', platform: 'WIN8' },
+		//{ browserName: 'internet explorer', version: '9', platform: 'WINDOWS' },
+		//{ browserName: 'firefox', version: '37', platform: [ 'WINDOWS', 'MAC' ] },
+		//{ browserName: 'chrome', version: '39', platform: [ 'WINDOWS', 'MAC' ] },
+		//{ browserName: 'safari', version: '8', platform: 'MAC' }
 	],
 
 	// Maximum number of simultaneous integration tests that should be executed on the remote WebDriver service
@@ -30,7 +32,8 @@ define({
 
 	// Name of the tunnel class to use for WebDriver tests.
 	// See <https://theintern.github.io/intern/#option-tunnel> for built-in options
-	tunnel: 'BrowserStackTunnel',
+	//tunnel: 'BrowserStackTunnel',
+	tunnel: 'NullTunnel',
 
 	// Configuration options for the module loader; any AMD configuration options supported by the AMD loader in use
 	// can be used here.
@@ -98,5 +101,5 @@ define({
 	functionalSuites: [ /* 'myPackage/tests/functional' */ ],
 
 	// A regular expression matching URLs to files that should not be included in code coverage analysis
-	excludeInstrumentation: /^(?:tests|node_modules)\//
+	excludeInstrumentation: /^(?:tests|node_modules|bower_components)\//
 });
