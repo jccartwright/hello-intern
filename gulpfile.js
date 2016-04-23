@@ -5,7 +5,7 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
 gulp.task('intern', function (cb) {
-    exec('./node_modules/.bin/intern-client config=tests/intern', function (err, stdout, stderr) {
+    exec('./node_modules/.bin/intern-runner config=tests/intern', function (err, stdout, stderr) {
         console.log(stdout);
         console.log(stderr);
         cb(err);
