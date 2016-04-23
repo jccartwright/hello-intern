@@ -6,6 +6,7 @@ Setup:
 * npm install
 * phantomjs --webdriver=4444
 
+Gulp Tasks:
 * "gulp watch" monitors for changes and automatically runs tests
 * "gulp serve" runs in browser 
 * run tests via browser, e.g. http://localhost:3000/node_modules/intern/client.html?config=tests/intern
