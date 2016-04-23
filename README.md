@@ -2,7 +2,7 @@
 exploration of Intern for testing ArcGIS applications
 
 Setup:
-* npm install -g gulp-cli
+* npm install -g gulp-cli bower
 * npm install
 * phantomjs --webdriver=4444
 
