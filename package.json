@@ -15,6 +15,6 @@
     "gulp": "^3.9.0",
     "gulp-intern": "0.0.4",
     "gulp-watch": "^4.3.5",
-    "intern": "^3.0.6"
+    "intern": "^3.1.1"
   }
 }
