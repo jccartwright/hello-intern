@@ -39,3 +39,33 @@ gulp.task('serve', function() {
     gulp.watch(['**/*.html', 'css/**/*.css', 'js/**/*.js'], {cwd: '.'}, reload);
 });
 
+
+//taken from Intern User Guide (https://theintern.github.io/intern/#gulp)
+gulp.task('test', function (done) {
+  // Define the Intern command line
+  var command = [
+    './node_modules/.bin/intern-runner',
+    'config=tests/intern'
+  ];
+
+  // Add environment variables, such as service keys
+  var env = Object.create(process.env);
+
+  // Spawn the Intern process
+  var child = require('child_process').spawn('node', command, {
+    // Allow Intern to write directly to the gulp process's stdout and
+    // stderr.
+    stdio: 'inherit',
+    env: env
+  });
+
+  // Let gulp know when the child process exits
+  child.on('close', function (code) {
+    if (code) {
+      done(new Error('Intern exited with code ' + code));
+    }
+    else {
+      done();
+    }
+  });
+});
